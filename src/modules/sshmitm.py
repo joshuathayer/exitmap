@@ -43,7 +43,7 @@ destinations = [("198.211.103.66", 22)]
 hostname = "198.211.103.66"
 port = 22
 
-keys = paramiko.util.load_host_keys("./known_hosts")
+keys = paramiko.util.load_host_keys("src/modules/known_hosts_sshmitm")
 
 def get_cert(exit_desc):
     exit_url = exiturl(exit_desc.fingerprint)
